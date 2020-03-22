@@ -1,0 +1,495 @@
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Decentralised Chat</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
+      @font-face {
+        font-family: 'icomoon';
+        src: url("../assets/fonts/icomoon.eot?jcg9f9?v=fe07c56222");
+        src: url("../assets/fonts/icomoon.eot?jcg9f9") format('embedded-opentype'),
+        url("../assets/fonts/icomoon.ttf?jcg9f9?v=fe07c56222") format('truetype'),
+        url("../assets/fonts/icomoon.woff?jcg9f9?v=fe07c56222") format('woff'),
+        url("../assets/fonts/icomoon.svg?jcg9f9") format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css?v=fe07c56222" media="screen">
+
+      <style>
+    .m-hero__picture {
+      background-image: url(../content/images/size/w2000/2020/03/thought-catalog-580700-unsplash_o.jpg);
+    }
+  
+    @media(max-width: 1000px) {
+      .m-hero__picture {
+        background-image: url(../content/images/size/w1000/2020/03/thought-catalog-580700-unsplash_o.jpg);
+      }
+    }
+  
+    @media(max-width: 600px) {
+      .m-hero__picture {
+        background-image: url(../content/images/size/w600/2020/03/thought-catalog-580700-unsplash_o.jpg);
+      }
+    }
+  </style>
+
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Being Codest">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Decentralised Chat">
+    <meta property="og:description" content="A decentralised work in progress. A couple of months ago while binge watching YouTube, I came across a very interesting TechCrunch interview with Vitalik Buterin (do watch it, it's worth the time), co-founder of Ethereum which got me curious about the Ethereum and crytpocurrencies in general. After digging a little">
+    <meta property="og:url" content="http://localhost:2368/decentralised-chat/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2020/03/thought-catalog-580700-unsplash_o.jpg">
+    <meta property="article:published_time" content="2018-11-03T20:33:00.000Z">
+    <meta property="article:modified_time" content="2020-03-17T18:14:01.000Z">
+    <meta property="article:tag" content="Projects">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Decentralised Chat">
+    <meta name="twitter:description" content="A decentralised work in progress. A couple of months ago while binge watching YouTube, I came across a very interesting TechCrunch interview with Vitalik Buterin (do watch it, it's worth the time), co-founder of Ethereum which got me curious about the Ethereum and crytpocurrencies in general. After digging a little">
+    <meta name="twitter:url" content="http://localhost:2368/decentralised-chat/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2020/03/thought-catalog-580700-unsplash_o.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Vaibhav Balloli">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Projects">
+    <meta name="twitter:site" content="@v_balloli">
+    <meta name="twitter:creator" content="@v_balloli">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1333">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Being Codest",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": {
+                "@type": "ImageObject",
+                "url": "http://localhost:2368/favicon.ico",
+                "width": 48,
+                "height": 48
+            }
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Vaibhav Balloli",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2020/03/Photo.jpg",
+            "width": 1080,
+            "height": 1987
+        },
+        "url": "http://localhost:2368/author/vaibhav/",
+        "sameAs": [
+            "https://vballoli.github.io",
+            "https://twitter.com/v_balloli"
+        ]
+    },
+    "headline": "Decentralised Chat",
+    "url": "http://localhost:2368/decentralised-chat/",
+    "datePublished": "2018-11-03T20:33:00.000Z",
+    "dateModified": "2020-03-17T18:14:01.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2020/03/thought-catalog-580700-unsplash_o.jpg",
+        "width": 2000,
+        "height": 1333
+    },
+    "keywords": "Projects",
+    "description": "A decentralised work in progress.\n\nA couple of months ago while binge watching YouTube, I came across a very\ninteresting TechCrunch interview with Vitalik Buterin\n[https://www.youtube.com/watch?v&#x3D;WSN5BaCzsbo] (do watch it, it&#x27;s worth the\ntime), co-founder of Ethereum which got me curious about the Ethereum and\ncrytpocurrencies in general. After digging a little into Ethereum, I found \nSolidity [https://github.com/ethereum/solidity]. Solidity is a statically typed\nlanguage developed by the same p",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.11">
+    <link rel="alternate" type="application/rss+xml" title="Being Codest" href="../rss/index.html">
+    <script>var disqus="vaibhavballoli";</script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script>
+  const ghostSearchApiKey = 'c90df94f7aafa741484cdda6b3'
+</script>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "http://localhost:2368"
+      // @license-end
+    </script>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      WebFontConfig = {
+        google: { families: ['Source+Sans+Pro:400,600,700&display=swap'] }
+      };
+
+      (function (d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+      // @license-end
+    </script>
+  </head>
+  <body class="post-template tag-projects">
+    
+
+<div class="main-wrap">
+    
+<header class="m-header with-picture js-header">
+  <div class="m-mobile-topbar" data-aos="fade-down">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+      <span class="icon-menu"></span>
+    </button>
+      <a href="../" class="m-site-name in-mobile-topbar">
+        Being Codest
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
+      <span class="icon-search"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main" data-aos="fade-down">
+      <div class="l-wrapper">
+        <div class="m-nav">
+          <nav class="m-nav__left">
+            <ul role="submenu">
+                <li class="only-desktop" role="menuitem">
+                  <a href="../" class="m-site-name in-desktop-menu">
+                    Being Codest
+                  </a>
+                </li>
+                
+  <li class="nav-about-me">
+    <a href="https://vballoli.github.io/">About Me</a>
+  </li>
+  <li class="nav-github">
+    <a href="https://github.com/vballoli">GitHub</a>
+  </li>
+  <li class="nav-kaggle">
+    <a href="https://www.kaggle.com/vballi">Kaggle</a>
+  </li>
+  <li class="nav-research-blog">
+    <a href="https://vballoli.github.io/research-papers">Research Blog</a>
+  </li>
+
+              <li role="menuitem" class="js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Toggle submenu">
+                  <span class="icon-more"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
+                      <div class="js-recent-articles">
+                            <div>
+                              <a href="../on-research/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="lozad" data-background-image="/content/images/size/w300/2020/03/michael-dziedzic-1bjsASjhfkE-unsplash.jpg"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="On Research...">
+                                  On Research...
+                                </h3>
+                                <span class="m-recent-article__date">6 months ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="../thoughts-on-the-ai-podcasts-hosted-by-lex-fridman-2/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="lozad" data-background-image="/content/images/size/w300/2020/03/download_o.jpg"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Thoughts on the AI podcasts hosted by Lex Fridman">
+                                  Thoughts on the AI podcasts hosted by Lex Fridman
+                                </h3>
+                                <span class="m-recent-article__date">8 months ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="../making-some-sh-room/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="lozad" data-background-image="/content/images/size/w300/2020/03/mario_o.jpg"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Making some 'shroom !">
+                                  Making some 'shroom !
+                                </h3>
+                                <span class="m-recent-article__date">10 months ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="../keras-like-neural-network/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="lozad" data-background-image="/content/images/size/w300/2020/03/neural_network-1522356325493_o.jpeg"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Keras like Neural Network">
+                                  Keras like Neural Network
+                                </h3>
+                                <span class="m-recent-article__date">a year ago</span>
+                              </a>
+                            </div>
+                      </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">Tags</h3>
+                        <ul>
+                            <li>
+                              <a href="../tag/bphc/">College</a>
+                            </li>
+                            <li>
+                              <a href="../tag/conference/">Conference</a>
+                            </li>
+                            <li>
+                              <a href="../tag/neural-network/">Neural Network</a>
+                            </li>
+                            <li>
+                              <a href="../tag/projects/">Projects</a>
+                            </li>
+                            <li>
+                              <a href="../tag/research/">Research</a>
+                            </li>
+                            <li>
+                              <a href="../tag/smart-campus/">Smart Campus</a>
+                            </li>
+                            <li>
+                              <a href="../tag/tech/">Tech</a>
+                            </li>
+                            <li>
+                              <a href="../tag/thoughts/">Thoughts</a>
+                            </li>
+                            <li>
+                              <a href="../tag/travel/">Travel</a>
+                            </li>
+                            <li>
+                              <a href="../tag/cooking/">cooking</a>
+                            </li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search" aria-label="Open search">
+              <span class="icon-search"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="Toggle dark mode">
+              <input type="checkbox" class="js-toggle-darkmode">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    
+
+  <section class="m-hero with-picture" data-aos="fade">
+    <div class="m-hero__picture in-post"></div>
+    </section>
+  
+  <main>
+    <article>
+      <div class="l-content in-post">
+          <div class="l-wrapper in-post  js-aos-wrapper" data-aos="fade-up" data-aos-delay="300">
+            <div class="l-post-content   js-progress-content">
+              <header class="m-heading">
+                <h1 class="m-heading__title in-post">Decentralised Chat</h1>
+                <div class="m-heading__meta">
+                    <a href="../tag/projects/" class="m-heading__meta__tag">Projects</a>
+                    <span class="m-heading__meta__divider">•</span>
+                  <span class="m-heading__meta__time">Nov 04, 2018</span>
+                </div>
+              </header>
+              <div class="pos-relative js-post-content">
+                <div class="m-share">
+                  <div class="m-share__content js-sticky">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/decentralised-chat/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                      <span class="icon-facebook"></span>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=Decentralised%20Chat&amp;url=http://localhost:2368/decentralised-chat/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                      <span class="icon-twitter"></span>
+                    </a>
+                    <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
+                      <span class="icon-arrow-top"></span>
+                      <svg>
+                        <circle class="progress-ring__circle js-progress" fill="transparent" r="0"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>A decentralised work in progress.</p><p>A couple of months ago while binge watching YouTube, I came across a very interesting TechCrunch interview with <a href="https://www.youtube.com/watch?v=WSN5BaCzsbo">Vitalik Buterin</a> (do watch it, it's worth the time), co-founder of Ethereum which got me curious about the Ethereum and crytpocurrencies in general. After digging a little into Ethereum, I found <a href="https://github.com/ethereum/solidity">Solidity</a>. Solidity is a statically typed language developed by the same people who've developed Ethereum, a turing complete blockchain, essentially meaning any problem can be solved assuming infinite memory, which was lacking in Bitcoin. Impressive!</p><p>Coincidentally, I enrolled in BITS F463 Cryptography course as a disciplinary elective which had an evaluated project component. So, I decided to use solidity and build an app. That's how the idea of decentralised chat started. You can find the project on github:</p><p><code>https://github.com/vbbphc/decentralised-chat</code></p><p>I decided to use Node.js since it was easy to work with and I found many resources and documentation in nodejs than any other framework. My first commit was a simple smart contract having only one functionality : sending a message using Truffle. Although it was only a few lines of code, it took me quite a while to understand it given there are very few beginner-friendly resources on the web about building DApps in solidity. This was going pretty well until I took a brief break for this project since I had many other assignments, projects and tests to complete and prepare for, leaving me exhausted at the end of the day and this project unattended.</p><p>The second commit was rushed since my midterm report submission was closing by and I had very little progress. This commit was mostly Javascript code for writing test for the smart contract, the chat UI and contract calls using bootstrap and Web3 frameworks. The concept of Web3 simply amazes me, although I still don't understand it completely. After working for 6 hours straight with programming languages in which I'm a complete beginner, the results were very satisfying. Using the combination of Truffle, Ganache, MetaMask - which I'd coin the term the Solidity-Dev-Trio, I built a simple, working chat room. I'll update about my progress on this later, given I have my mid term submission tomorrow. I hope I find time for adding more functionality to this, given it has a very crappy UI. Do try it out by forking the repository and if you like it, star it!</p>
+              </div>
+            </div>
+          </div>
+          <section class="m-author">
+            <div class="m-author__content">
+              <div class="m-author__picture">
+                <a href="../author/vaibhav/" class="m-author-picture" aria-label="Author picture">
+                    <div style="background-image: url(../content/images/2020/03/Photo.jpg);"></div>
+                </a>
+              </div>
+              <div class="m-author__info">
+                <h4 class="m-author__name">
+                  <a href="../author/vaibhav/">Vaibhav Balloli</a>
+                </h4>
+                  <p class="m-author__bio">Senior @ BITS Pilani, Hyderabad Campus. ML | RL | Hardware | Systems and Networks</p>
+                <ul class="m-author-links">
+                    <li>
+                      <a href="https://vballoli.github.io" target="_blank" rel="noopener" aria-label="Website">
+                        <span class="icon-globe"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/@v_balloli" target="_blank" rel="noopener" aria-label="Twitter">
+                        <span class="icon-twitter"></span>
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="m-recommended">
+            <div class="l-wrapper in-recommended">
+              <h3 class="m-section-title in-recommended">Recommended for you</h3>
+              <div class="m-recommended-articles">
+                <div class="m-recommended-slider js-recommended-articles">
+                  
+    <div class="m-recommended-slider__item">
+    <article class="m-article-card post tag-projects tag-neural-network">
+      <div class="m-article-card__picture lozad" data-background-image="/content/images/size/w600/2020/03/neural_network-1522356325493_o.jpeg">
+      <a href="../keras-like-neural-network/" class="m-article-card__picture-link" aria-label="Article"></a>
+      <a href="../author/vaibhav/" class="m-article-card__author js-tooltip" aria-label="Authors" data-tippy-content="Posted by Vaibhav Balloli ">
+          <div style="background-image: url(../content/images/size/w100/2020/03/Photo.jpg);"></div>
+      </a>
+    </div>
+      <div class="m-article-card__info">
+        <a href="../tag/projects/" class="m-article-card__tag">Projects</a>
+      <a href="../keras-like-neural-network/" class="m-article-card__info-link">
+        <div>
+          <h2 class="m-article-card__title js-article-card-title " title="Keras like Neural Network">
+            Keras like Neural Network
+          </h2>
+        </div>
+        <div class="m-article-card__timestamp">
+          <span>a year ago</span>
+          <span>•</span>
+          <span>1 min read</span>
+        </div>
+      </a>
+    </div>
+  </article>
+    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+    </article>
+  </main>
+</div>
+
+
+
+    
+<div class="m-search js-search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <fieldset>
+        <span class="icon-search m-search-icon"></span>
+        <input type="text" class="m-input in-search js-input-search" placeholder="Type to search" aria-label="Type to search">
+      </fieldset>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <p class="m-footer-copyright">
+      <span>Being Codest © 2020</span>
+      <span>  •  </span>
+      <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+
+    <nav class="m-footer-social">
+        <a href="https://twitter.com/v_balloli" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter"></span>
+        </a>
+    </nav>
+    <p class="m-footer-copyright jslicense">
+      <a href="../assets/html/javascript.html?v=fe07c56222" rel="jslicense">JavaScript license information</a>
+    </p>
+  </div>
+</footer>
+
+    <div class="m-alert success subscribe js-alert" data-notification="subscribe">
+  Great! You've successfully subscribed.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success signup js-alert" data-notification="signup">
+  Great! Next, complete checkout for full access.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success signin js-alert" data-notification="signin">
+  Welcome back! You've successfully signed in.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success checkout js-alert" data-notification="checkout">
+  Success! Your account is fully activated, you now have access to all content.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
+    <script defer src="https://unpkg.com/@tryghost/content-api@1.2.7/umd/content-api.min.js"></script>
+    <script defer src="../assets/js/manifest.js?v=fe07c56222"></script>
+    <script defer src="../assets/js/vendor.js?v=fe07c56222"></script>
+    <script defer src="../assets/js/app.js?v=fe07c56222"></script>
+
+      <script defer src="../assets/js/post.js?v=fe07c56222"></script>
+
+
+    
+  </body>
